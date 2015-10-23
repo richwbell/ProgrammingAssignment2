@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## This pair of functions creates a matrix, inverts it, and caches the inversion. 
+## The purpose is to save the computational power of repeatedly inverting the 
+## same matrix.
 
-## Write a short comment describing this function
+
+## This function creates a list vector which contains a matrix vector and several sub-functions. 
+## When used with the second function, this function stores the inversion of the first matrix.
 
 makeCacheMatrix <- function(x = matrix()) {
   inverted<- NULL
@@ -16,7 +19,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## This function recieves the function above as input. It will either invert
+## the matrix vector contained within, or output the pre-cached inverted value. 
+
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
